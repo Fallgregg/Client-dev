@@ -1,1 +1,1 @@
-# Client-dev
+# Client-development basics course

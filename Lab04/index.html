@@ -9,7 +9,7 @@
 	<div class="main">
 		<header class = "header">
 			<div class="blockX"><h1>The X-Files</h1></div>
-			<div class="block1" id="bl1">I want to believe!</div>
+			<div class="block1" id="bl1">I want to believe!<span id="res1"></span></div>
 		</header>
 		<div class="center">
 			<div class="block2" id="bl2">
@@ -41,16 +41,40 @@
 			<div class="blockX"><h1>Learn more!</h1></div>
 		</footer>
 
-		<div id="under">
-			<div id="tasks">
-				<input type="button" value="Task 1" onclick="task1()">
-				<input type="button" value="Task 2" onclick="changeColorSecs()">
-				<input type="button" value="Click!" onclick="clicked() + alert('Cliked!')" >
-				
+		<div id="tasks">
+			<input type="button" value="Task 1"  onclick="task1()"> 
+		    <input type="button" value="Task 2"  onclick="changeColorSecs()">
+		    <input type="button" value="Click!" onclick="clicked() + alert('Cliked!')" >
+		    <input type="button" value="Task 4" onclick="taskNum4()">
+	   </div>
+		<div id="task3">
+			<form id="form1">
+				<input type="text" id="login" placeholder="Enter User Login"><br>
+				<input type="text" id="repos" placeholder="Enter Repository Name"><br>
+				<input type="button" value="Search" onclick="git(login.value, repos.value)">
+			</form>
+			<div id="error"></div>
+			<div id="table">
+				<div class="tb">User</div>
+				<div class="tb">Commits</div>
+				<div class="tb" id="login"></div>
+				<div class="tb" id="name"></div>
+				<div class="tb" id="commit"></div>
 			</div>
 		</div>
-	</div>
+		<div id="task5">
+			<form id="form2">
+                <label for="array">
+                    <input type="" id="array" placeholder="Enter number" min="0">
+                </label>
+                <input type="button" value="Add" onclick="addToArray()">
+                <input type="button" value="Sort" onclick="sortArray()">
+			</form>
+			<div id="result"></div><br>
+		</div>
+	</div> 
 	<script src="scripts.js"></script>
 </body>
 </html>
+
 				

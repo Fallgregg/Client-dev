@@ -118,15 +118,56 @@ img {
     background-color: #e6ffde;
 }
 
-#under {
-    background-color: #162544;
+#task3 {
+    background-color: #cfdbba;
     padding: 40px;
     border-top: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
 #tasks {
+    background-color: #e8f0dc;
     padding: 30px;
-    background-color: #162544;
+    border-top: 1px solid black;
     display: flex;
+    justify-content: space-between;
+}
+
+#u {
+    background-color: #aec7ff;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1/4;
+    justify-content: space-between;
+}
+
+#form3 {
+    padding: 40px;
+    background-color: #aec7ff;
+}
+
+#table {
+    border: solid black;
+    margin-bottom: 30px;
+    margin-right: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0fr;
+}
+
+.tb {
+    padding: 2px;
+    
+}
+
+#task5 {
+    background-color: #b1bba1;
+    padding: 40px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+#button {
+    display: flex;
+    justify-content: space-between;
 }

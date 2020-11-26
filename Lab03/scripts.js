@@ -51,15 +51,16 @@ function changeColorH() {
     document.getElementById("header").style.borderColor = "white";
 }
 
-// function inputValue(from, to) {
-//     $(to).val($(from).html());
-// }
+function inputValue(from, to) {
+    $(to).val($(from).html());
+}
 
-// function readLS(elem){
-//     if(localStorage.getItem(elem)){
-//         $(elem).html(localStorage.getItem(elem));
-//     }
-// }
+function readLS(elem){
+    if(localStorage.getItem(elem)){
+        $(elem).html(localStorage.getItem(elem));
+    }
+}
+
 function addEvent(elemToChange, elemWithValue) {
     $(elemWithValue).change(function(){
         $(elemToChange).html($(elemWithValue).val());
@@ -73,7 +74,6 @@ function clickButtons(button, elem) {
     });
 }
 
-
 function inputAll() {
     addEvent("#header", "#header-input");
     addEvent("#sidebar", "#sidebar-input");
@@ -82,7 +82,6 @@ function inputAll() {
     addEvent("#content3", "#content3-input");
     addEvent("#footer", "#footer-input");
 
-  
     clickButtons("#header-button", "#header");
     clickButtons("#sidebar-button", "#sidebar");
     clickButtons("#content1-button", "#content1");
@@ -90,8 +89,6 @@ function inputAll() {
     clickButtons("#content3-button", "#content3");
     clickButtons("#footer-button", "#footer-input");
 }
-
-
 
 function setHtml() {
     // readLS("#header");
@@ -111,7 +108,6 @@ function setHtml() {
     inputAll();
 } 
 
-
 (function menu()
 {
     // task num 1
@@ -124,9 +120,6 @@ function setHtml() {
     // task num 3
     setCoockies();                                      
     
-   
-    
-  
     // task num 5
     window.addEventListener("click", function() 
     { 
